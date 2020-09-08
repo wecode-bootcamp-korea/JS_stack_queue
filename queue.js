@@ -1,7 +1,5 @@
 class Queue {
-  constructor() {
-    this.state = [];
-  }
+  constructor() {}
 
   enqueue = (data) => {};
 

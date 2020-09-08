@@ -34,10 +34,8 @@ test("Queue 클래스로 구현", () => {
 
 test("Enqueue, Dequeue 메소드 테스트", () => {
   const q = new Queue();
-  expect(() => {
-    q.enqueue(1);
-    q.dequeue();
-  }).not.toThrow();
+  q.enqueue(1);
+  expect(q.dequeue()).toEqual(1);
 });
 
 test("getFirst 메소드 테스트", () => {
